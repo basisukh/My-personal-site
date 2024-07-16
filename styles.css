@@ -1,134 +1,109 @@
-
 body {
-    margin: 0px;
-    text-align: center;
+    text-align: left;
     font-family: 'Bree Serif', serif;
-    background-color: #eff3c6;
-    color: #0779e4;
+    background-color: #000000;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
-h1 {
-    font-family: 'Parisienne', cursive;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    font-size: 562.5%;
-    color: #77d8d8
 
+.glow {
+    color: #ffffff;
+    text-align: left;
+    font-size: 48px;
+    font-weight: bold;
+    animation: glow 1s ease-in-out infinite alternate;
 }
+
+@keyframes glow {
+    from {
+        text-shadow: 
+            0 0 5px #ffffff, 
+            0 0 10px #3399ff, 
+            0 0 15px #3399ff, 
+            0 0 20px #3399ff, 
+            0 0 25px #3399ff, 
+            0 0 30px #3399ff, 
+            0 0 35px #3399ff;
+    }
+    to {
+        text-shadow: 
+            0 0 10px #3399ff, 
+            0 0 20px #3399ff, 
+            0 0 30px #3399ff, 
+            0 0 40px #3399ff, 
+            0 0 50px #3399ff, 
+            0 0 60px #3399ff, 
+            0 0 70px #3399ff;
+    }
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    margin-top: 100px;
+    margin-bottom: 0;
+    
+    font-size: 562.5%;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+    position: relative;
+    left: 80px;
+    top: 80px;
+}
+
 p {
     line-height: 2;
 }
-.skill-row {
-    width: 50%;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    text-align: left;
-    
-}
-h2 {
+
+.animatedText {
     font-family: 'Roboto Slab', serif;
     font-size: 2rem;
     color: #77d8d8;
     font-weight: normal;
     line-height: 2rem;
-    padding-bottom:10px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-h3{
-    font-family: 'Roboto Slab', serif;
-    color: #4cbbb9;
-}
-.top {
-    padding-top: 100px;
-}
-.middle {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 0;
-    margin-left: 0;
-}
-.bottom {
-    padding-top: 20px;
-    text-decoration: none;
-}
-.bottom-cloud{
-    position: absolute;
-    left: 250px;
-    bottom: 400px
-}
-.top-cloud{
-    position: absolute;
-    width: 10%;
-    height: auto;
-    right: 200px;
-    top: 20px;
-    padding-bottom: 50px;
 
+.top {
+    position: relative;
+    left: 80px;
+    top: 50px;
+    max-width: calc(100% - 160px); /* Adjust max-width to fit within viewport */
 }
-.mypic{
-    width: 25%;
-    height: auto;
+
+.one-line-description{
+    top: -50px;
+    position: relative;
 }
-a {
-    
-    color: #4cbbb9;
+
+.top-buttons{
+    position: relative;
+    left: 80px;
+    top: 40px;
 }
-a:hover{
-    color: #f69e7b;
-}
-.pic1{
-    width: 25%;
-    float: left;
-    margin-right: 30px;
-}
-.pic2{
-    width: 25%;
-    float: right;
-    margin-left: 30px;
-}
-.intro{
-    width: 30%;
-    margin: auto;
-}
-hr{
-    border:dotted #4cbbb9;
-    border-bottom: none;
-    width: 4%;
-    margin: 100px auto;
-}
-.contact-message{
-    width: 40%;
-    margin: 40px auto 60px;
-}
-.copyright{
-    font-size:0.75rem;
-    padding:20px;
-}
-.btn {
-    background: #0975db;
-    background-image: -webkit-linear-gradient(top, #0975db, #0084ff);
-    background-image: -moz-linear-gradient(top, #0975db, #0084ff);
-    background-image: -ms-linear-gradient(top, #0975db, #0084ff);
-    background-image: -o-linear-gradient(top, #0975db, #0084ff);
-    background-image: linear-gradient(to bottom, #0975db, #0084ff);
-    -webkit-border-radius: 60;
-    -moz-border-radius: 60;
-    border-radius: 60px;
-    font-family: 'Bree Serif', serif;
+
+button{
+    width: 150px;
+    height: 50px;
+    background-color: #3399ff;
+    border: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-  }
-  
-  .btn:hover {
-    background: #4cbbb9;
-    background-image: -webkit-linear-gradient(top, #4cbbb9, #3498db);
-    background-image: -moz-linear-gradient(top, #4cbbb9, #3498db);
-    background-image: -ms-linear-gradient(top, #4cbbb9, #3498db);
-    background-image: -o-linear-gradient(top, #4cbbb9, #3498db);
-    background-image: linear-gradient(to bottom, #4cbbb9, #3498db);
-    text-decoration: none;
-  }
-/*font-family: 'Ewert', cursive;*/
+}
+
+.learn-button{
+    
+}
+
+.contact-button{
+    
+}
+

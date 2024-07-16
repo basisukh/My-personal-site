@@ -10,53 +10,40 @@
 </head>
 <body>
     <div class="top">
-        <img class="top-cloud"  src="CSS - My Site Images/sun.png" alt="cloud image">
-        <h1>I'm Akalsukh</h1>
-        <h2>A student</h2>
-        <img class="bottom-cloud"  src="CSS - My Site Images/cloud.png" alt="cloud image">
-        <img src="CSS - My Site Images/mountain.png" alt="mountain image">
+        <h1 class="glow">I'm Akalsukh</h1>
+        <div class="animatedText"></div>
     </div>
-    <div class="middle">
-        <div class="profile">
-          <img class="mypic" src="CSS - My Site Images/circle-cropped (2).png" alt="A picture of me">
-          <h2>Hello.</h2>
-          <p class="intro"> I am a high school student pursuing my dreams to become a software engineer. I like to play videogames and mess around with old technology nobody uses. I also like to do robotics, hence I am learning arduino right now.</p>
-        </div>
-        <hr>
-        <div class="skills">
-          <h2>My Skills.</h2>
-          <div class="skill-row">
-            <img class="pic1" src="python.jpeg" alt="python">
-            <h3>Coding</h3>
-            <p>Although I am not very good, I can create a game in python in about a few weeks.</p>
-          </div>
-          <div class="skill-row">
-            <img class="pic2" src="math.jpg" alt="math">
-            <h3>Math</h3>
-            <p>I have always loved to do math. A funfact is that I almost learned division before multiplication.</p>
-          </div>
-        </div>
-          <div class="skill-row">
-            <img class="pic1" src="mario.jpg" alt="videgame">
-            <h3>Videogames</h3>
-            <p>If I try hard enough I can beat a videgame in a few weeks. </p>
-          </div>
-        </div>
-        <hr>
-        <div class="contact-me">
-          <h2>Get In Touch</h2>
-          <a class="btn" href="funny-mario.html">CONTACT ME</a>
-        </div>
-      </div>
-      
-      
-      <div class="bottom">
-        <a class="footer-link" href="funny-mario.html">LinkedIn</a>
-        <a class="footer-link" href="funny-mario.html">Twitter</a>
-        <a class="footer-link" href="funny-mario.html">Website</a>
-        <p class="copyright">© 2020 Akalsukh Basi.</p>
-      </div>
-      
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const div = document.querySelector(".animatedText");
+            const text = "student";
+            const typingSpeed = 50;
+            const delayBetweenRepeats = 1000;
+
+            function textTypingEffect(element, text, i = 0) {
+                if (i === 0) {
+                    element.textContent = "";
+                }
+
+                element.textContent += text[i];
+
+                if (i === text.length - 1) {
+                    setTimeout(() => textTypingEffect(element, text, 0), delayBetweenRepeats);
+                    return;
+                }
+
+                setTimeout(() => textTypingEffect(element, text, i + 1), typingSpeed);
+            }
+
+            textTypingEffect(div, text, 0);
+        });
+    </script>
+    <div class = "one-line-description"><h2>Self - driven programmer motivated by my passion to try new things </h2></div>
     
+    <div class = "top-buttons">
+        <button type="button" class = "learn-button">Learn more</button>
+        <button type="button" class = "contact-button">Contact me</button>
+    </div>
 </body>
 </html>
