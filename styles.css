@@ -76,18 +76,18 @@ p {
     max-width: calc(100% - 160px); /* Adjust max-width to fit within viewport */
 }
 
-.one-line-description{
+.one-line-description {
     top: -50px;
     position: relative;
 }
 
-.top-buttons{
+.top-buttons {
     position: relative;
     left: 80px;
     top: 140px;
 }
 
-button{
+button {
     width: 200px;
     height: 75px;
     background-color: #3399ff;
@@ -100,31 +100,48 @@ button{
     color: #ffffff;
 }
 
-.learn-button{
+.learn-button {
     
 }
 
-.contact-button{
+.contact-button {
     
 }
 
-.about-me{
+.about-me {
     color: white;
     position: relative;
     left: 80px;
     top: 600px;
     font-size: 24px;
-    padding-bottom:1000px;
     margin-right: 2px;
-    max-width: calc(100% - 160px);    overflow-wrap: break-word;
-    word-wrap:break-word;
-}
-.about-me-text-left{
+    max-width: calc(100% - 160px);
     overflow-wrap: break-word;
-
+    word-wrap: break-word;
 }
 
-.about-me-text-right{
-    overflow-wrap: break-word;
+.about-container {
+    left: -75px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    justify-content: center;
+    position: relative;
+    top: 600px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.about-me-text-right {
+    color: white;
+    font-size: 24px;
+    max-width: 800px;
+    overflow-wrap: break-word;
+}
+
+.my-picture {
+    object-fit: contain;
+    width: 600px;
+    height: auto;
+    font-size: 24px;
 }
