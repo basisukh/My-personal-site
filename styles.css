@@ -44,7 +44,7 @@ h1 {
     margin-top: 9.26vh; /* 100px / 1080px * 100 */
     margin-bottom: 0;
     color: #77d8d8;
-    font-size: 3.33vw;
+    font-size: 3.33vw; /* 64px / 1920px * 100 */
 }
 
 h2 {
@@ -52,7 +52,7 @@ h2 {
     color: #ffffff;
     position: relative;
     margin-left: 4.17vw; /* 80px / 1920px * 100 */
-    padding-top: 3.5vh; /* 20px / 1080px * 100 */
+    padding-top: 1.85vh; /* 20px / 1080px * 100 */
 }
 
 p {
@@ -184,16 +184,17 @@ button {
 
 @media (max-width: 480px) {
     .top, .top-buttons, .about-me, .about-container {
-        margin-left: 0.52vw; /* 10px / 1920px * 100 */
-        margin-right: 0.52vw; /* 10px / 1920px * 100 */
+        margin-left: 2.67vw; /* Adjusted for better spacing on smaller screens */
+        margin-right: 2.67vw; /* Adjusted for better spacing on smaller screens */
     }
 
     h1, h2, .animatedText {
-        font-size: 1.25vw; /* 24px / 1920px * 100 */
+        font-size: 4.58vw; /* 88px / 1920px * 100 for h1 */
     }
 
     button {
         width: 100%;
-        font-size: 1.25vw; /* 24px / 1920px * 100 */
+        font-size: 5.00vw; /* 96px / 1920px * 100 */
+        height: auto;
     }
 }
