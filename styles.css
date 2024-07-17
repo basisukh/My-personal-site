@@ -10,9 +10,10 @@ body {
 .glow {
     color: #ffffff;
     text-align: left;
-    font-size: 48px;
+    font-size: 4rem;
     font-weight: bold;
     animation: glow 1s ease-in-out infinite alternate;
+    padding-bottom: 10px;
 }
 
 @keyframes glow {
@@ -42,8 +43,8 @@ h1 {
     font-family: 'Roboto Slab', serif;
     margin-top: 100px;
     margin-bottom: 0;
-    
-    font-size: 562.5%;
+    color: #77d8d8;
+    font-size: 4rem;
 }
 
 h2 {
@@ -51,7 +52,7 @@ h2 {
     color: #ffffff;
     position: relative;
     left: 80px;
-    top: 80px;
+    top: 180px;
 }
 
 p {
@@ -60,18 +61,18 @@ p {
 
 .animatedText {
     font-family: 'Roboto Slab', serif;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #77d8d8;
     font-weight: normal;
     line-height: 2rem;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .top {
     position: relative;
     left: 80px;
-    top: 50px;
+    top: 150px;
     max-width: calc(100% - 160px); /* Adjust max-width to fit within viewport */
 }
 
@@ -83,18 +84,18 @@ p {
 .top-buttons{
     position: relative;
     left: 80px;
-    top: 40px;
+    top: 140px;
 }
 
 button{
-    width: 150px;
-    height: 50px;
+    width: 200px;
+    height: 75px;
     background-color: #3399ff;
     border: 0px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 32px;
     margin: 4px 2px;
     color: #ffffff;
 }
@@ -107,3 +108,23 @@ button{
     
 }
 
+.about-me{
+    color: white;
+    position: relative;
+    left: 80px;
+    top: 600px;
+    font-size: 24px;
+    padding-bottom:1000px;
+    margin-right: 2px;
+    max-width: calc(100% - 160px);    overflow-wrap: break-word;
+    word-wrap:break-word;
+}
+.about-me-text-left{
+    overflow-wrap: break-word;
+
+}
+
+.about-me-text-right{
+    overflow-wrap: break-word;
+
+}
