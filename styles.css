@@ -39,23 +39,31 @@ body {
     }
 }
 
+.top{
+    position:relative;
+    top:20vh
+}
+
 h1, h2, .animatedText {
     font-family: 'Roboto Slab', serif;
     color: #ffffff;
 }
 
 h1 {
-    margin-top: 5vh; /* Adjusted for better spacing */
     margin-bottom: 0;
     font-size: 3.33vw; /* 64px / 1920px * 100 */
 }
 
 h2 {
     position: relative;
-    margin-left: 2.5vw; /* Adjusted for better spacing */
+    margin-left: 0vw; /* Adjusted for better spacing */
     top: -2.5vh;
     /*padding-top: -2vh;  Adjusted for better spacing */
-    font-size: 2.5vw; /* 48px / 1920px * 100 */
+    font-size: 1.5vw; /* 48px / 1920px * 100 */
+}
+
+.animatedText{
+    font-size: 1.75vw;
 }
 
 p {
@@ -82,6 +90,8 @@ p {
 }
 
 button {
+    position: relative;
+    top: 35vh;
     width: 15vw; /* Adjusted for responsiveness */
     height: 5vw; /* Adjusted for responsiveness */
     background-color: #3399ff;
@@ -92,19 +102,31 @@ button {
     font-size: 1.67vw; /* 32px / 1920px * 100 */
     margin: 0.2vw 0.1vw; /* Adjusted for better spacing */
     color: #ffffff;
+    font-weight: bold; /* Added for bold text */
+    border-radius: 5px; /* Added to match the rounded corners */
+    padding: 1vw 2vw; /* Added padding for better spacing */
+    cursor: pointer; /* Added pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Added for smooth hover transition */
+}
+
+button:hover {
+    background-color: #267bbd; /* Slightly darker blue on hover */
+    color: #e0e0e0; /* Slightly lighter text on hover */
 }
 
 .learn-button {
-
+    /* Custom styles for the learn-button can be added here if needed */
 }
 
 .contact-button {
-
+    /* Custom styles for the contact-button can be added here if needed */
 }
 
 .about-me {
+    position: relative;
+    top: 75vh;
     color: white;
-    margin-top: 25vh; /* Adjusted for better spacing */
+    /*margin-top: 25vh;  Adjusted for better spacing */
     font-size: 1.5vw; /* 24px / 1080px * 100 */
     max-width: 95%; /* Adjusted for better responsiveness */
     overflow-wrap: break-word;
@@ -112,11 +134,13 @@ button {
 }
 
 .about-container {
+    position: relative;
+    top: 90vh;
     display: flex;
     flex-wrap: wrap;
     gap: 10vw; /* Adjusted for better spacing */
     justify-content: flex-start;
-    margin-top: 5vh; /* Adjusted for better spacing */
+    /* Adjusted for better spacing */
     margin-bottom: 5vh; /* Adjusted for better spacing */
 }
 

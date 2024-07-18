@@ -11,48 +11,48 @@
 <body>
     <div class="top">
         <h1 class="glow">I'm Akalsukh</h1>
-        <div class="animatedText"></div>
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const div = document.querySelector(".animatedText");
-            const text = "student";
-            const typingSpeed = 50;
-            const delayBetweenRepeats = 1000;
-
-            function textTypingEffect(element, text, i = 0) {
-                if (i === 0) {
-                    element.textContent = "";
+        <div class="animatedText">
+        <script class="animatedText">
+            document.addEventListener("DOMContentLoaded", function() {
+                const div = document.querySelector(".animatedText");
+                const text = "student";
+                const typingSpeed = 50;
+                const delayBetweenRepeats = 1000;
+    
+                function textTypingEffect(element, text, i = 0) {
+                    if (i === 0) {
+                        element.textContent = "";
+                    }
+    
+                    element.textContent += text[i];
+    
+                    if (i === text.length - 1) {
+                        setTimeout(() => textTypingEffect(element, text, 0), delayBetweenRepeats);
+                        return;
+                    }
+    
+                    setTimeout(() => textTypingEffect(element, text, i + 1), typingSpeed);
                 }
-
-                element.textContent += text[i];
-
-                if (i === text.length - 1) {
-                    setTimeout(() => textTypingEffect(element, text, 0), delayBetweenRepeats);
-                    return;
-                }
-
-                setTimeout(() => textTypingEffect(element, text, i + 1), typingSpeed);
-            }
-
-            textTypingEffect(div, text, 0);
-        });
-    </script>
-    <div class="one-line-description">
-        <h2>Self-driven programmer motivated by my passion to try new things</h2>
+    
+                textTypingEffect(div, text, 0);
+            });
+        </script>
+        </div>
+        <div class="one-line-description">
+            <h2>Self-driven programmer motivated by my passion to try new things</h2>
+        </div>
     </div>
-
+    
     <div class="top-buttons">
-        <button type="button" class="learn-button">Learn more</button>
+        <button type="button" class="learn-button" onclick="scrollToAboutMe()">Learn more</button>
         <button type="button" class="contact-button">Contact me</button>
     </div>
-
-    <div class="about-me">
+    
+    <div id="about-me" class="about-me">
         <h1>About me</h1>
         <h3 class="about-me-text-top">Aspiring software engineer with experience in Java, Python, Lisp, TypeScript, and SQL.</h3>
     </div>
-
+    
     <div class="about-container">
         <div>
             <img class="my-picture" src="mypicture2.png" alt="Picture of me">
@@ -64,5 +64,11 @@
             <h3>I also love staying updated on the latest technological advancements, whether they're in computing or automotive tech. I love exploring the processes that went into creating these innovations.</h3>
         </div>
     </div>
+
+    <script>
+        function scrollToAboutMe() {
+            document.getElementById('about-me').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
